@@ -1,0 +1,80 @@
+/* :root {
+
+  --primary-color: #3671e9;
+  --secondary-color: #316ab175;
+  --hover-color: #2766e6;
+} */
+
+.app {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  /* background: url('../src/assets/app.svg'); */
+  /* background: url('../src/assets/app3.svg') no-repeat; */
+  /* background: url('../src/assets/app2.svg') no-repeat; */
+  /* background: url('../src/assets/baner2.svg') no-repeat; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-layout {
+  width: 80%;
+  height: 90vh;
+  padding: 0, 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .app-layout {
+    width: 100%;
+    height: 100vh;
+    padding: 0, 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: none;
+    border: none;
+  }
+}
+
+.sidebar {
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 20px;
+}
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+.footer {
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  text-align: center;
+  justify-self: flex-end;
+}
