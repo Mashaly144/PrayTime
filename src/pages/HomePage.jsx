@@ -19,7 +19,7 @@ const HomePage = () => {
   // // fetch data
   useEffect(() => {
     setLoading(true);
-    const url = `http://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${city}&country=${country}&method=5`;
+    const url = `https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${city}&country=${country}&method=5`;
 
     axios
       .get(url)
